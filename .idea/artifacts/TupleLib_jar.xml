@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TupleLib:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TupleLib_jar</output-path>
+    <root id="archive" name="TupleLib.jar">
+      <element id="module-output" name="TupleLib" />
+    </root>
+  </artifact>
+</component>
