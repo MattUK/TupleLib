@@ -49,4 +49,21 @@ public class Tuple<T1> implements ITuple {
     public int size() {
         return 1;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Tuple tuple = (Tuple) o;
+
+        if (item != null ? !item.equals(tuple.item) : tuple.item != null) return false;
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return item != null ? item.hashCode() : 0;
+    }
 }
